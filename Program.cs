@@ -40,7 +40,9 @@ namespace UnderstandingMethods
         // member => expression;
         // https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/expression-bodied-members
         // C# allows you to create methods that can take optional arguments - string message = "Barev"
-        static void sayHi(DateTime date, string message = "Barev") => Console.WriteLine($"{message}, today is: {date}."); 
+        static void sayHi(DateTime date, string message = "Barev") => Console.WriteLine($"{message}, today is: {date}.");
+
+        #region expression-bodied member - example
 
         static int aa(int a, int b)
         {
@@ -48,6 +50,8 @@ namespace UnderstandingMethods
         }
 
         static int aa2(int a, int b) => a + b;
+        
+        #endregion        
 
         // A feature introduced in C# 7.0 is the ability to create methods within methods, referred to officially as local functions.
         // A local function is a function declared inside another function, must be private, with C# 8.0 can be static,
